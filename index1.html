@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事說明1</title>
+    
+    <link rel="stylesheet" href="index1.css">
+    
+</head>
+<body>
+    <!--背景-->
+    <canvas id="space"></canvas>            
+                       
+    <!--主面板-->
+    <div class="panel0">
+        <div class="index"></div>
+        <div class="child0"></div>
+        <div class="child0"></div>
+        <div class="child0 dialog"><h4 id="dio">太空船AI：<br>　　小隊們!</h4>
+            <button class="btn1"id="diobtn1"onclick="changeDialogBack(-1);">上一步</button>
+            <div class="btn2 btn" id='w'><a href="#" id="warp">click me!</a></div>
+            <button class="btn2"id="diobtn2"onclick="changeDialog(1);">Hey！</button> </div>
+            
+        <button class="skip" id="skip"onclick="skipToNext();">skip</button>
+   </div>
+
+
+    <script src="./index1.js"></script> 
+    <script src="./space.js"></script>
+</body>
+</html>
