@@ -4,7 +4,7 @@ var DialogueButton2 =document.getElementById("diobtn2");
 var skip=document.getElementById("skip");
 var warpDetect=document.getElementById('warp');
 var play=1;
-warpDetect.style.display="none";
+
 
 var diaCount =0;
 console.log(diaCount);
