@@ -15,7 +15,8 @@ console.log(diaCount);
     {
         document.getElementById('fade').style.display="block";
         console.log('2e2e')
-        var timeoutID = setTimeout( function(){console.log('eded');document.getElementById('fade').style.display="none";}, 5000);
+        var timeoutID = setTimeout( function(){console.log('eded');document.getElementById('fade').style.display="none";}, 2000);
+
     }
 
     function changeDialog(count)
@@ -180,7 +181,12 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'占卜感應了部分日記，了解到外星人QQ到每個地點都會喝茶，所以只要將外星人QQ最後一天喝的茶依照順序連起來，就能知道它最後一天的足跡了。（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）',
+        msg:'占卜感應了部分日記，了解到外星人QQ到每個地點都會喝茶，所以只要將外星人QQ最後一天喝的茶依照順序連起來，就能知道它最後一天的足跡了。',
+        button:'原來如此',
+    },
+    {
+        name:'女巫：',
+        msg:'（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）',
         button:'拿日記',
     },
     {

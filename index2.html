@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +7,28 @@
     <title>故事說明2</title>
     <link rel="stylesheet" href="subindex\index2.css">
     <link rel="stylesheet" href="subindex\MagicBall.css">
+    <script>if(window.innerHeight<480)
+           document.getElementById("OverFlow").style.overflow="overflow-y";</script>
 </head>
-<body>
-    <div id="fade"></div>
-        <div class="panel0">
-            
-            <div class="index"></div>
-            <div class="child0">測關用</div>
-            <div class="child0">
-                <div class="cssloader2"></div>
-                <div class="cssloader1"></div></div>
-            <div class="child0 dialog"><h4 id="dio"><br>　　　偵茶號帶著大家和ＱＱ一起到北投尋找神靈的力量，進行北投女巫的占卜。</h4>
-                <button class="btn1"id="diobtn1"onclick="changeDialogBack(-1);">上一步</button>
-                <button class="btn2"id="diobtn2"onclick="changeDialog(1);">找女巫</button> </div>
-            <button class="skip" id="skip"onclick="skipToNext();">skip</button>
-            
-            </div>
+<body >
+    <div id="OverFlow">
+        <div id="fade"></div>        
+            <div class="panel0">            
+                <div class="index"></div>
+                <div class="child0">測關用</div>
+                <div class="child0"><div class="MagicBall">
+                    <div class="cssloader2"></div>
+                    <div class="cssloader1"></div>             
+            </div>  </div>                
+                <div class="child0 dialog"><h4 id="dio"><br>　　　偵茶號帶著大家和ＱＱ一起到北投尋找神靈的力量，進行北投女巫的占卜。</h4>
+                    <button class="btn1"id="diobtn1"onclick="changeDialogBack(-1);">上一步</button>
+                    <button class="btn2"id="diobtn2"onclick="changeDialog(1);">找女巫</button> </div>
+                <button class="skip" id="skip"onclick="skipToNext();">skip</button>
+                
+                </div>
 
-        <script src="subindex\index2.js"></script> 
-   </div>
+            <script src="subindex\index2.js"></script> 
+        </div>
+    </div>
 </body>
 </html>

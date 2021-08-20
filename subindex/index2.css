@@ -1,18 +1,19 @@
 
         html,body{
             
+            background-image: linear-gradient(rgb(53, 12, 128), rgb(37, 0, 37),black);    
             margin: 0px;
-            height: 100%;
-            overflow:hidden;
-            background-image: linear-gradient(rgb(53, 12, 128), rgb(37, 0, 37),black);            
+            height: 100%;                               
             color:antiquewhite; 
         }
 
-     
-
-
-        .panel0{
+        #OverFlow{
             overflow:hidden;
+        }
+
+        
+        .panel0{
+            
             position: absolute;
             top:0px;
             border: 0px solid black;

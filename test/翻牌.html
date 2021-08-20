@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 160px;
+  height: 65px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(218, 216, 216);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #fdf692;
+  color: black;
+  transform: rotateY(180deg);
+}
+.box {
+  border: none;
+  width: 656px;
+  height: 343px;
+  padding: 4px;
+  position:absolute;
+    margin:0px;
+    
+}
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故銅</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>鐵觀音↔金萱茶
+                </p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故瓷</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>茉莉綠茶↔凍頂烏龍茶</p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故雜</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>普洱茶↔煎茶</p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故文</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>碧螺春↔普洱茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>中銅</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>青草茶↔紅烏龍茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>中瓷</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>東方美人茶↔煎茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>中雜</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>碧螺春↔茉莉綠茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>中文</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>東方美人茶↔文山包種茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>購書</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>茉莉綠茶↔煎茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>購瓷</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>凍頂烏龍茶↔紅茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>購畫</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>紅茶↔煎茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>購扇</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>鐵觀音↔文山包種茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>贈書</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>青草茶↔凍頂烏龍茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>贈雕</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>紅烏龍茶↔茉莉綠茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>贈畫</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>碧螺春↔凍頂烏龍茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>贈拓</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>文山包種茶↔茉莉綠茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故宮</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>凍頂烏龍茶↔金萱茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故雕</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>鐵觀音↔煎茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故畫</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>紅茶↔普洱茶</p> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2>故玉</h2> 
+            </div>
+            <div class="flip-card-back">
+            <p>文山包種茶↔普洱茶</p> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

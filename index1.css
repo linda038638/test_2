@@ -3,7 +3,6 @@
             
             margin: 0px;
             height: 100%;
-            overflow:hidden;
            background-color: #0a1627;
             background-image:  linear-gradient(rgba(255,255,255,0.02) 2.2px, transparent 2.2px ), linear-gradient(90deg, rgba(255,255,255,0.02) 2.2px, transparent 2.2px);
             background-size: 40px 40px, 40px 40px;
@@ -13,13 +12,14 @@
           
           
         }
-        
+        #OverFlow{
+            overflow:hidden;
+        }
    
 
-        #space
-            {width:100%}
+        #space{width:100%}
+
         .panel0{
-            overflow:hidden;
             position: absolute;
             top:0px;
             border: 0px solid black;
