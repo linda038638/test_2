@@ -39,7 +39,7 @@
         }
         .child0{
             
-            border: 0px solid rgb(165, 0, 0);
+            border: 2px solid rgb(165, 0, 0);
             grid-column: 2/-2;
            
         }
