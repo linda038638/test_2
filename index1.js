@@ -16,7 +16,7 @@ console.log(diaCount);
     {   
         if(a[diaCount].button=='尋找女巫'){
             document.getElementById('fade').style.display="block";
-            var timeoutID = setTimeout( function(){window.location.href='index2.html';}, 3000);
+            var timeoutID = setTimeout( function(){window.location.href='index2.html';}, 800);
             
             }
 
