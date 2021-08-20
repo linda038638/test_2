@@ -8,7 +8,7 @@ var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
 var focalLength = canvas.width *2;
 var warp = 0;
 var centerX, centerY;
-
+var radius=6;
 var stars = [], star;
 var i;
 var j=0,j1=20;
@@ -38,9 +38,11 @@ function executeFrame(){
 if(j<j1){  
   if(animate)
     requestAnimFrame(executeFrame);
+    
     moveStars();
     drawStarsLine();
     drawStars();
+    drawEarth(j,j1);
   }  
 
  
@@ -85,7 +87,7 @@ function executeFrame2(){
                               document.getElementById('diobtn2').style.display="block";
                               document.getElementById("dio").style.display="block";
                               j1=-1;
-                            }, 1500);
+                            }, 1000);
                         }, 500);
                       }, 50);
                   }, 100);
@@ -173,5 +175,17 @@ function drawStarsLine(){
     c.fillStyle = "rgba(0,10,20,1)";
     c.fillRect(0,0, canvas.width, canvas.height);
   }
+
+}
+
+function drawEarth(num,num1){
+
+//c.fillRect(canvas.width / 2,canvas.height / 2,25,25);
+
+var earthSize =2+80*(num/num1);
+
+var img = document.getElementById("earth");
+  c.drawImage(img,canvas.width/2-earthSize/2,canvas.height/2-earthSize/2,earthSize,earthSize);
+
 
 }

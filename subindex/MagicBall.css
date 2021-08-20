@@ -1,6 +1,7 @@
 
 .MagicBall{
     margin-top:100px;
+    border: 0px solid black;
    
  }#fade{
     position: absolute;
@@ -28,8 +29,11 @@
     width:146px;
     height:146px;
     line-height:146px;
-    top: 40px;
-    margin:0 auto 10px;
+    top: 0px;
+    bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin: auto;
     position:relative;
     box-sizing:border-box;
     text-align:center;
@@ -55,8 +59,10 @@
     width:146px;
     height:146px;
     line-height:146px;
-    top: 40px;
-    margin:0 auto 10px;
+    bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin:0 auto;
     position:relative;
     box-sizing:border-box;
     text-align:center;

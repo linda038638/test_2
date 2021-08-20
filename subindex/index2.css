@@ -8,6 +8,7 @@
         }
 
         #OverFlow{
+            height: 100%;
             overflow:hidden;
         }
 
@@ -21,7 +22,7 @@
             height: 100%;
             display: grid;
             grid-template-columns: 1fr 12fr 1.5fr 1fr;
-            grid-template-rows:44px 1.5fr 8fr 7fr 30px;
+            grid-template-rows:40px 1.5fr 8fr 7fr 30px 30px;
         }
         .index{
             margin: 0px;
