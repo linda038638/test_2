@@ -22,7 +22,8 @@ if(j<j1){
   }
 document.getElementById('warp').addEventListener("click",function(e){
       window.warp = window.warp==1 ? 0 : 1;
-      j++;
+      j++;  
+     
      // window.c.clearRect(0, 0, window.canvas.width, window.canvas.height);
       executeFrame2();
  

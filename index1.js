@@ -5,17 +5,25 @@ var skip=document.getElementById("skip");
 var warpDetect=document.getElementById('warp');
 var play=1;
 warpDetect.style.display="none";
-
+DialogueButton1.style.display="none";
+document.getElementById('fade').style.display="none";
 var diaCount =0;
 console.log(diaCount);
 
 
 
     function changeDialog(count)
-    {
+    {   
+        if(a[diaCount].button=='尋找女巫'){
+            document.getElementById('fade').style.display="block";
+            var timeoutID = setTimeout( function(){window.location.href='index2.html';}, 3000);
+            
+            }
+
         console.log(diaCount);
-        if(diaCount<a.length-1)
-        diaCount +=count;
+        if(diaCount<a.length-1){diaCount +=count;}
+        if(diaCount>0){DialogueButton1.style.display="block";}
+      
         Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
         DialogueButton2.innerHTML=a[diaCount].button;
         console.log(diaCount);
@@ -32,24 +40,18 @@ console.log(diaCount);
             play=0;
             }
         }
-        if(a[diaCount].button=='尋找女巫'){
-            diaCount=a.length-1;
-            window.location.href='index2.html';
-           // setTimeout("javascript:location.href='index2.html'", 1000);
-        }
+        if(diaCount==a.length){diaCount=a.length-1;}
+        
         
     }
     function changeDialogBack(count)
-    {
-        if(diaCount==0){
-        }else
-        {
+    { 
             console.log(diaCount);
             diaCount+=count;
             Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
             DialogueButton2.innerHTML=a[diaCount].button;
             console.log(diaCount);
-        }
+            if(diaCount==0){ DialogueButton1.style.display="none";}
 
     }
     function skipToNext()
@@ -57,6 +59,7 @@ console.log(diaCount);
         diaCount=a.length-1;
         Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
         DialogueButton2.innerHTML=a[diaCount].button;
+        if(diaCount>0){DialogueButton1.style.display="block";}
     }
     
 let a = [
