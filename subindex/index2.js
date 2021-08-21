@@ -21,7 +21,9 @@ console.log(diaCount);
 
     function changeDialog(count)
     {
-        if(a[diaCount].button=='謝謝！我們出發了！'){alert("此頁結束。\n快去下一頁吧!!!");}
+        if(a[diaCount].button=='謝謝！我們出發了！'){
+            window.location.href='flipbook.html';
+            alert("此頁結束。\n快去下一頁吧!!!");}
             
             
         console.log(diaCount);
