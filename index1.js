@@ -84,6 +84,11 @@ let a = [
         button:'>　>　>',
     },
     {
+        name:'<br>　緊急信函<br>',
+        msg:'求救訊號：<br>　　ＳＯＳ！Ｌｏｓｔ　ｔｈｅ　ＵＦＯ　ｋｅｙｓ　ａｃｃｉｄｅｎｔａｌｌｙ．．．<br>　　ＱＱ　 ｂｅ　ｔｒａｐｐｅｄ　ｉｎ　Ｔａｉｗａｎ！<br>　　Ｐｌｅａｓｅ　ｈｅｌｐ　ｍｅ！<br><br>　　未知訊號：<br>　　雖然無法轉譯出來，但是翻譯程式歸納結果。知道每一個單字都分別對應到0~9其中<br>　　一個數字，但究竟哪個單字對應哪個數字，還需要請你們幫忙找出！<br>　　以下就是無法翻譯的未知訊號(ciest, odin, siem等都是未翻譯出的單字)<br><br>　　ciest + odin + siem + tri = chie + ciest + dva + piat<br>　　diev + odin = dva + piat + tri<br>　　tri * tri = diev<br>　　dva + odin + piat = vos<br>　　dva + dva + piat = die<br>　　vos - vos = nul<br><br><br>　　',
+        button:'>　>　>',
+    },
+    {
         name:'緊急信函',
         msg:'<br>　　　雖然無法轉譯出來，但是翻譯程式歸納結果。知道每一個單字都分別對應到0~9其中一個數字，但究竟哪個單字對應哪個數字，還需要請你們幫忙找出！<br>　　　<br>　　　',
         button:'>　>　>',
