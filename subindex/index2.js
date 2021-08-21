@@ -14,7 +14,6 @@ console.log(diaCount);
     function loadFadeIn()
     {
         document.getElementById('fade').style.display="block";
-        console.log('2e2e')
         var timeoutID = setTimeout( function(){console.log('eded');document.getElementById('fade').style.display="none";}, 2000);
 
     }
@@ -22,7 +21,6 @@ console.log(diaCount);
     function changeDialog(count)
     {
         if(a[diaCount].button=='謝謝！我們出發了！'){
-            window.location.href='flipbook.html';
             alert("此頁結束。\n快去下一頁吧!!!");}
             
             
@@ -86,7 +84,7 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'１. 紅色的鑰匙掉在最後一天去過的森林遊樂區之中最南邊的地方<br>　　２. 綠色的鑰匙掉在最後一天去過的森林遊樂區之中海拔最高的地方<br>　　３. 藍色的鑰匙掉在最後一天去過最靠近重心的森林遊樂區',
+        msg:'１. <font color="#FF0000">紅色的鑰匙</font>掉在最後一天去過的森林遊樂區之中最南邊的地方<br>　　２. <font color="#02CA73">綠色的鑰匙</font>掉在最後一天去過的森林遊樂區之中海拔最高的地方<br>　　３. <font color="#3DB5FF">藍色的鑰匙</font>掉在最後一天去過最靠近重心的森林遊樂區',
         button:'>　>　>',
     },
     {
@@ -143,7 +141,7 @@ let a = [
 
     {
         name:'女巫：',
-        msg:'(女巫大喊)不、還有機會！仔細看，那些點和線，飛進<b>茶葉座標</b>和<b>黑心茶商的走私路線</b>裡面了！        ',
+        msg:'(女巫大喊)不、還有機會！仔細看，那些點和線，飛進<font color="#5CADAD">茶葉座標</font>和<font color="#AD5A5A">黑心茶商的走私路線</font>裡面了！        ',
         button:'什麼!?',
     },
     {
@@ -158,7 +156,7 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'等等！<br>　　在尋找之前，我先教你們怎麼看占卜內容。<br>　　如圖...(測關時請往下看再回來>///<)',
+        msg:'等等！<br>　　在尋找之前，我先教你們怎麼看占卜內容。<br>　　<font color="yellow">(請往下看再回來繼續~)</font>',
         button:'好',
     },
     {
@@ -188,7 +186,7 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）',
+        msg:'（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）<br><font color="yellow">　　(測關時，請往下看日記>__<)</font>',
         button:'拿日記',
     },
     {
@@ -198,7 +196,7 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'我想應該能夠幫助你們，找出ＱＱ最後一天的足跡。加油吧！<br>　　(故事說明結束囉^0^/ 麻煩大家前往計分說明頁~側欄跟下方都有連結)',
+        msg:'我想這應該能夠幫助你們找到ＱＱ最後一天的足跡。加油吧！<br>　　(故事說明結束囉^0^/ 麻煩大家前往計分說明頁~側欄跟下方都有連結)',
         button:'謝謝！我們出發了！',
     },
 ]
