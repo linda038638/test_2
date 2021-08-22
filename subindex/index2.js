@@ -21,8 +21,10 @@ console.log(diaCount);
 
     function changeDialog(count)
     {
+        
         if(a[diaCount].button=='謝謝！我們出發了！'){
-            alert("此頁結束。\n快去下一頁吧!!!");}
+            //alert("此頁結束。\n快去下一頁吧!!!");
+            DialogueButton2.disabled=true;}
             
             
         console.log(diaCount);
@@ -34,10 +36,12 @@ console.log(diaCount);
         console.log(diaCount);
         if(a[diaCount-1].button=='拿日記' ){ document.getElementById("flipbook").style.display="block";}
         if(diaCount==a.length){diaCount=a.length-1;}
+
         
     }
     function changeDialogBack(count)
     {
+        DialogueButton2.disabled=false;
         if(a[diaCount-1].name=='日記' ){ diaCount--;}
         console.log(diaCount);
         diaCount+=count;
