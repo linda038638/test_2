@@ -12,6 +12,13 @@
             overflow:hidden;
         }
 
+        #flipbook{
+            width: 98%;
+            height: 98%;
+            position: absolute;
+            z-index: 2;
+            border: 0px solid black;
+        }
         
         .panel0{
             

@@ -5,6 +5,7 @@ var skip=document.getElementById("skip");
 var warpDetect=document.getElementById('warp');
 var play=1;
 DialogueButton1.style.display="none";
+document.getElementById("flipbook").style.display="none";
 var diaCount =0;
 console.log(diaCount);
 
@@ -31,18 +32,20 @@ console.log(diaCount);
         Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
         DialogueButton2.innerHTML=a[diaCount].button;
         console.log(diaCount);
-
+        if(a[diaCount-1].button=='拿日記' ){ document.getElementById("flipbook").style.display="block";}
         if(diaCount==a.length){diaCount=a.length-1;}
         
     }
     function changeDialogBack(count)
     {
+        if(a[diaCount-1].name=='日記' ){ diaCount--;}
         console.log(diaCount);
         diaCount+=count;
         Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
         DialogueButton2.innerHTML=a[diaCount].button;
         console.log(diaCount);
         if(diaCount==0){ DialogueButton1.style.display="none";}
+        
     }
     function skipToNext()
     {
@@ -50,6 +53,9 @@ console.log(diaCount);
         Dialogue.innerHTML=a[diaCount].name+"<br>　　"+a[diaCount].msg;
         DialogueButton2.innerHTML=a[diaCount].button;
         if(diaCount>0){DialogueButton1.style.display="block";}
+    }
+    function ClosePop(){
+        document.getElementById("flipbook").style.display="none";
     }
 let a = [
     {
@@ -84,7 +90,7 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'１. <font color="#FF0000">紅色的鑰匙</font>掉在最後一天去過的森林遊樂區之中最南邊的地方<br>　　２. <font color="#02CA73">綠色的鑰匙</font>掉在最後一天去過的森林遊樂區之中海拔最高的地方<br>　　３. <font color="#3DB5FF">藍色的鑰匙</font>掉在最後一天去過最靠近重心的森林遊樂區',
+        msg:'１. <font color="#FF0000">紅色的鑰匙</font>掉在最後一天去過．．．．．．之中．．．．．．地方<br>　　２. <font color="#02CA73">綠色的鑰匙</font>掉在最後一天去過．．．．．．之中．．．．．．地方<br>　　３. <font color="#3DB5FF">藍色的鑰匙</font>掉在最後一天去過．．．．．．之中．．．．．．地方',
         button:'>　>　>',
     },
     {
@@ -152,17 +158,12 @@ let a = [
     {
         name:'飛船AI：',
         msg:'　　那我們快去找回來吧！',
-        button:'好！',
-    },
-    {
-        name:'女巫：',
-        msg:'等等！<br>　　在尋找之前，我先教你們怎麼看占卜內容。<br>　　<font color="yellow">(請往下看"占卜內容的法則"再繼續~)</font>',
-        button:'好',
+        button:'>　>　>',
     },
     {
         name:'ＱＱ：',
         msg:'^%#$#H$ˋ%@＼(＠＾０＾＠)/！',
-        button:'那就出發吧！',
+        button:'>　>　>',
     },
     {
         name:'女巫：',
@@ -181,8 +182,13 @@ let a = [
     },
         {
         name:'女巫：',
-        msg:'（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）<br><font color="yellow">　　(測關時，請往下看日記>__<)</font>',
+        msg:'（女巫透過魔力秀出一本小小的書，上面寫了許多東西，夾雜著外星文。）',
         button:'拿日記',
+    },
+    {
+        name:'日記',
+        msg:'        ',
+        button:'>　>　>',
     },
     {
         name:'　',
@@ -191,12 +197,12 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'占卜感應了部分日記，了解到外星人QQ到每個地點都會喝茶，所以只要將外星人QQ最後一天喝的茶依照順序連起來，就能知道它最後一天的足跡了。',
+        msg:'占卜感應了部分日記，了解到外星人QQ到每個地點都會喝茶，所以只要循著QQ品茶之旅最後一天的足跡，就能找到遺失的鑰匙。',
         button:'原來如此',
     },
     {
         name:'女巫：',
-        msg:'我想這應該能夠幫助你們找到ＱＱ最後一天的足跡。加油吧！<font color="yellow"><br>　　(故事說明結束囉^0^/ 請大家前往"關卡流程與計分"~)</font>',
+        msg:'我想這應該能夠幫助你們找到ＱＱ遺失的鑰匙！加油吧！<font color="yellow"><br>　　(故事說明結束囉^0^/"~)</font>',
         button:'謝謝！我們出發了！',
     },
 ]

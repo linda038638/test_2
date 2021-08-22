@@ -1,19 +1,42 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    background-image: radial-gradient(ellipse at center, rgba(235, 209, 170, 0.692) 0%, rgba(209, 153, 80, 0.575) 100%);
-  }
+/*html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: radial-gradient(ellipse at center, rgba(235, 209, 170, 0.692) 0%, rgba(209, 153, 80, 0.575) 100%);
+}*/
   
   *, *::before ,*::after {
     box-sizing: border-box;
-    
+    opacity: 92%;
   }
   
-
-
+  body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #flipbookbtn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(300-40-10px, -200+10px);
+    border: 0px solid rgb(3, 38, 112);
+    background-color: #23a158;
+    color:wheat;
+    border-radius: 40%;
+    opacity: 40%;
+    z-index: 2;
+  }
+  #flipbookbtn:hover{
+    border: 0px solid rgb(112, 3, 3);
+    background-color: #6d1c1c;
+    color:wheat;
+    opacity: 80%;
+  }
   .book {
     width: 600px;
     max-width: 100%;
