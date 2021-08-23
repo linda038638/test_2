@@ -93,7 +93,45 @@
         }
 
 
+        /* 父層定位 */
+        .child1{
+            position: relative;
+            
+        }
 
+
+
+        /* 子層定位左、右 */
+        #dialogue{
+            max-height: 100%;  
+            max-width: 100%; 
+            width: auto;
+            height: auto;
+            position: absolute;  
+            transform: scale(1.2);
+            
+            top: 0;  
+            bottom: 0;  
+            left: 0;   
+            margin: auto;
+            margin-left: 35px;
+            
+        }
+        #dialogueQQ{
+            max-height: 100%;  
+            max-width: 100%; 
+            width: auto;
+            height: auto;
+            position: absolute;  
+            transform: scale(1.2);
+            
+            top: 0;  
+            bottom: 0;  
+            right: 0;   
+            margin: auto;
+            margin-right: 35px;
+            
+        }
         
 
 
