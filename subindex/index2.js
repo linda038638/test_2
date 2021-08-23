@@ -9,7 +9,7 @@ var play=1;
 DialogueButton1.style.display="none";
 document.getElementById("flipbook").style.display="none";
 
-            img.style.display="none";  //圖片先關
+            //img.style.display="none";  //圖片先關
             imgQQ.style.display="none"; //圖片先關
 
 var diaCount =0;
