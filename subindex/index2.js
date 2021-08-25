@@ -8,8 +8,9 @@ var imgQQ =document.getElementById("dialogueQQ");    //圖片
 var play=1;
 DialogueButton1.style.display="none";
 document.getElementById("flipbook").style.display="none";
+document.getElementById("end").style.display="none";
 
-            //img.style.display="none";  //圖片先關
+            img.style.display="none";  //圖片先關
             imgQQ.style.display="none"; //圖片先關
 
 var diaCount =0;
@@ -28,9 +29,13 @@ console.log(diaCount);
     function changeDialog(count)
     {
         
-        if(a[diaCount].button=='謝謝！我們出發了！'){
+        if(a[diaCount].button=='出發！'){
             //alert("此頁結束。\n快去下一頁吧!!!");
-            DialogueButton2.disabled=true;}
+            //document.getElementById("MagicBall").style.display="none";
+            document.getElementById("end").style.display="block";
+           
+            DialogueButton2.disabled=true;
+            }
             
             
         console.log(diaCount);
@@ -43,11 +48,12 @@ console.log(diaCount);
         console.log(diaCount);
         if(a[diaCount-1].button=='拿日記' ){ document.getElementById("flipbook").style.display="block";}
         if(diaCount==a.length){diaCount=a.length-1;}
-
+       
         
     }
     function changeDialogBack(count)
     {
+        document.getElementById("end").style.display="none";
         DialogueButton2.disabled=false;
         if(a[diaCount-1].name=='日記' ){ diaCount--;}
         console.log(diaCount);
@@ -274,8 +280,14 @@ let a = [
     },
     {
         name:'女巫：',
-        msg:'我想這應該能夠幫助你們找到ＱＱ遺失的鑰匙！加油吧！<font color="yellow"><br>　　(故事說明結束囉^0^/"~)</font>',
-        button:'謝謝！我們出發了！',
+        msg:'我想這應該能夠幫助你們找到ＱＱ遺失的鑰匙！加油吧！',
+        button:'謝謝！',
+        src:"img/witch/1.png",
+    },
+    {
+        name:'',
+        msg:'<font color="yellow"><br>　　↓↓↓(故事說明結束囉^0^/"~)↓↓↓下滑點選連結至</font>關卡流程與計分↓↓↓',
+        button:'出發！',
         src:"img/witch/1.png",
     },
 ]
