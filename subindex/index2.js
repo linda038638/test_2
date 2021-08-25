@@ -8,7 +8,7 @@ var imgQQ =document.getElementById("dialogueQQ");    //圖片
 var play=1;
 DialogueButton1.style.display="none";
 document.getElementById("flipbook").style.display="none";
-document.getElementById("end").style.display="none";
+//document.getElementById("end").style.display="none";
 
             img.style.display="none";  //圖片先關
             imgQQ.style.display="none"; //圖片先關
@@ -32,7 +32,8 @@ console.log(diaCount);
         if(a[diaCount].button=='出發！'){
             //alert("此頁結束。\n快去下一頁吧!!!");
             //document.getElementById("MagicBall").style.display="none";
-            document.getElementById("end").style.display="block";
+            document.getElementById("mid").innerHTML="<div id='end' class='endbox'><div id='end' class='end'>故事說明已結束<br>↓↓↓請由下方按鈕↓↓↓<br>進入<font color='#AD5A5A'>關卡流程與計分</font></div></div>";
+            //document.getElementById("end").style.display="block";
            
             DialogueButton2.disabled=true;
             }
@@ -53,7 +54,7 @@ console.log(diaCount);
     }
     function changeDialogBack(count)
     {
-        document.getElementById("end").style.display="none";
+        
         DialogueButton2.disabled=false;
         if(a[diaCount-1].name=='日記' ){ diaCount--;}
         console.log(diaCount);
@@ -63,6 +64,7 @@ console.log(diaCount);
         imgchange(a[diaCount].src); //圖片
         console.log(diaCount);
         if(diaCount==0){ DialogueButton1.style.display="none";}
+        document.getElementById("end").style.display="none";
         
     }
     function skipToNext()
